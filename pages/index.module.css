@@ -1,13 +1,13 @@
 .main {
-  background: rgb(244, 255, 164);
+  background: #4e97fe; 
 }
 
 .main,
 .main input {
   font-size: 16px;
   line-height: 24px;
-  color: #353740;
-  font-family: "IBM Plex Sans Arabic", sans-serif;
+  color: #635c65;
+  font-family: "Arabic", sans-serif;
   height: 100%;
 }
 .main {
@@ -19,11 +19,11 @@
   width: 34px;
 }
 .main h3 {
-  font-family: "Great Vibes", cursive;
+  font-family: sans-serif;
   font-weight: 700;
   font-size: 40px;
   line-height: 40px;
-  color: #009c17;
+  color: #ffbe00;
   line-height: 24px;
 }
 .main form {
@@ -32,12 +32,12 @@
 }
 .main input[type="text"] {
   padding: 12px 16px;
-  border: 2px solid #00d6ff;
+  border: 2px solid #f6ab3c;
   border-radius: 1px;
   margin-bottom: 12px;
-  outline-color: #00ffff;
-  background: #ffffff9d;
-  color: #009c17;
+  outline-color: #ffbe00;
+  background: #ffffff;
+  color: #635c65;
   width: 100%;
 }
 .main ::placeholder {
@@ -47,8 +47,8 @@
 .main input[type="submit"] {
   padding: 12px 0;
   color: white;
-  background-color: #00d6ff;
-  border: 2px solid #00d6ff;
+  background-color: #f6ab3c;
+  border: 2px solid #f6ab3c;
   border-radius: 1px;
   text-align: center;
   cursor: pointer;
@@ -65,17 +65,17 @@
 }
 
 .main .chatDisplay {
-  background: #ffffff9d;
+  background: #ffffff;
   font-size: 18px;
   text-align: left;
   height: 400px;
   border-radius: 1px;
-  border: 2px solid #00d6ff;
-  outline-color: #10a37f;
+  border: 2px solid #f6ab3c;
+  outline-color: #ffbe00;
   margin-bottom: 12px;
-  padding: 12px 0px;
+  padding: 6px;
   overflow-y: auto;
-  color: #009c17;
+  color: #635c65;
 }
 
 .message {
@@ -92,9 +92,3 @@
   margin-left: 10px;
 }
 
-.footer,
-.footer a,
-.footer a:visited {
-  padding-top: 10px;
-  color: #009c17;
-}

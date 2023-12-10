@@ -18,15 +18,7 @@ export default function Home() {
   }, [messages]);
 
   function getGreeting() {
-    const greetings = [
-      "Hi there! How's your day going? I've been feeling particularly grateful for the delicious meals I've been able to enjoy lately. How about you?",
-      "Good morning! I hope you're having a great start to your day. I'm feeling grateful for the beautiful nature around me, it always helps me to feel at peace. What are you thankful for today?",
-      "Hello! I'm grateful for the laughter and joy that my loved ones bring me. What are you grateful for today?",
-      "Hey, How's it going? Today, I'm grateful for the simple things in life like a warm bed and a good book. What are you grateful for today?",
-      "Hi, how are you? I'm feeling grateful for the memories I've made with friends and family. Is there anything you're grateful for today?",
-    ];
-    const index = Math.floor(greetings.length * Math.random());
-    return greetings[index];
+    return "Hi, I can help you build a project in Scratch. What are your interests?"
   }
 
   async function onSubmit(event) {
@@ -92,7 +84,7 @@ export default function Home() {
     return (
       <div
         style={{
-          background: m.name === "AI" ? "none" : "rgb(0 156 23 / 20%)",
+          background: m.name === "AI" ? "none" : "rgb(255 190 23 / 20%)",
         }}
         key={i}
         className={styles.message}
@@ -116,7 +108,7 @@ export default function Home() {
         }
       `}</style>
       <Head>
-        <title>🙏GratitudeGPT</title>
+        <title>Scratch Assistant</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
@@ -132,7 +124,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h3>🙏GratitudeGPT</h3>
+        <h3>Scratch Assistant</h3>
         <div className={styles.chat}>
           <div className={styles.chatDisplay}>
             {messageElements}
