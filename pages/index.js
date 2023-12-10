@@ -144,9 +144,6 @@ export default function Home() {
             <input type="submit" value="Submit" />
           </form>
         </div>
-        <div className={styles.footer}>
-          made by <a href="http://whichlight.com">whichlight</a>
-        </div>
       </main>
     </div>
   );
