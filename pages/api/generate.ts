@@ -43,7 +43,7 @@ const handler = async (req: Request): Promise<Response> => {
     return new Response("this is a test response ");
   } else {
     const payload: OpenAIStreamPayload = {
-      model: "gpt-3.5-turbo",
+      model: "gpt-4",
       messages: getMessagesPrompt(chat),
       temperature: 0.9,
       presence_penalty: 0.6,
