@@ -4,6 +4,7 @@ import styles from "./index.module.css";
 
 export default function Home() {
   const bottomRef = useRef(null);
+  const formRef = useRef(null); // Ref to reference the form element
   const [chatInput, setChatInput] = useState("");
   const [messages, setMessages] = useState([]);
 
@@ -20,6 +21,12 @@ export default function Home() {
   function getGreeting() {
     return "Hi, I can help you build a project in Scratch. What are your interests?"
   }
+
+
+  const buttonClick = (buttonText) => {
+    setChatInput(chatInput + buttonText);
+
+  };
 
   async function onSubmit(event) {
     event.preventDefault();
@@ -128,7 +135,14 @@ export default function Home() {
         <div className={styles.chat}>
           <div className={styles.chatDisplay}>
             {messageElements}
-
+            <div>
+              <button onClick={() => buttonClick("Yes")}>Yes</button>
+              <button onClick={() => buttonClick("No")}>No</button>
+              <button onClick={() => buttonClick("Help")}>Help</button>
+              <button onClick={() => buttonClick("I love it")}>😍</button>
+              <button onClick={() => buttonClick("I'm doubtful")}>🤨</button>
+              <button onClick={() => buttonClick("I don't like it")}>😢</button>
+            </div>
             <div ref={bottomRef} />
           </div>
           <form onSubmit={onSubmit}>
