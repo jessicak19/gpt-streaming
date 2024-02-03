@@ -1,3 +1,10 @@
+# Implemented for OpenAI GPT-4 with Streaming Responses 
+
+Chatbot using GPT-4 which assists Scratch users in creating and brainstorming Scratch projects.
+Presented and tested during Generative AI discussion group at MIT Media Lab
+To be implemented into Scratch interface, complete with image detection/ scanning abilities to scan Scratch environment to help users. 
+
+
 # OpenAI GPT-3.5 (ChatGPT API) Chat App with Streaming Responses
 
 This is a simple chat application built using the ChatGPT API, GPT-3.5. It uses [Next.js](https://nextjs.org/), and builds off of the OpenAI API [quickstart tutorial](https://beta.openai.com/docs/quickstart). Edit the prompt in the generate.ts file to describe the kind of chat character you'd like.
