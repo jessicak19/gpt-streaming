@@ -4,33 +4,8 @@ Chatbot using GPT-4 which assists Scratch users in creating and brainstorming Sc
 Presented and tested during Generative AI discussion group at MIT Media Lab
 To be implemented into Scratch interface, complete with image detection/ scanning abilities to scan Scratch environment to help users. 
 
+Scratch Chat - I programmed prototype blocks for Scratch with added chatGPT-4 functionality, including blocks that set and update the system prompt and have pre-filled “choose options” among others, and worked on both frontend and backend developments. I also created an extension chatbot using GPT-4 which helps users brainstorm project ideas or helps troubleshoot errors in their projects, fine-tuning the openAI model through multiple rounds of prompt engineering. 
 
-# OpenAI GPT-3.5 (ChatGPT API) Chat App with Streaming Responses
+_extensions for AI chatbots and image generation to add text/image features to Scratch platform such as system prompt presets and Controlnet versions. Front-end and backend developer using Github, Javascript, React.
+_
 
-This is a simple chat application built using the ChatGPT API, GPT-3.5. It uses [Next.js](https://nextjs.org/), and builds off of the OpenAI API [quickstart tutorial](https://beta.openai.com/docs/quickstart). Edit the prompt in the generate.ts file to describe the kind of chat character you'd like.
-
-For more on streaming with GPT-3, check out the [vercel edge function tutorial](https://vercel.com/blog/gpt-3-app-next-js-vercel-edge-functions). This has updated the code from the tutorial with the gpt-3.5-turbo model.
-
-You can test out the promps in [ChatGPT](https://chat.openai.com/) and also in the [Playground Chat example](https://platform.openai.com/playground/p/default-chat?mode=chat).
-
-## Setup
-
-Install
-
-```bash
-$ npm install
-```
-
-Make a copy of the example environment variables file
-
-```bash
-$ cp .env.example .env
-```
-
-Add your [API key](https://beta.openai.com/account/api-keys) to the newly created `.env` file, and add your prompt as well.
-
-Run the app
-
-```bash
-$ npm run dev
-```
